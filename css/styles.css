@@ -1,0 +1,292 @@
+/* ---------* Import Fonts *--------- */
+
+@font-face {
+    font-family: 'tahoma-font';
+    src: url('../fonts/Tahoma.ttf')  format('truetype');
+}
+
+/* ---------* Reset CSS *------------ */
+* { 
+	margin: 0; 
+	padding: 0; 
+	border: 0; 
+}
+html,
+body
+{
+	/*height: 100%;*/
+}
+body {
+	font-family: 'tahoma-font', sans-serif;
+	background-color: #fff;
+}
+h1 { 
+    font-size: 2.2em; 
+} 
+h2 { 
+    font-size: 2.0em;     
+} 
+h3 { 
+    font-size: 1.8em; 
+} 
+h4 { 
+    font-size: 1.6em;     
+} 
+h5 { 
+    font-size: 1.4em;     
+} 
+p { 
+    font-size: 1.2em;     
+}
+/*
+/* ---------* end: Reset CSS *------- */
+
+
+/* ---------* Header *---------------- */
+header {
+    background: #fff;
+}
+.language-selection {
+	padding-top: 25px;
+}
+.language-selection .language {
+
+}
+#main-menu {
+	margin-top: 12px;
+}
+#main-menu > li > a {
+	text-transform: uppercase;
+	color: #fff;
+	background: #6DBC49;
+	padding: 10px 15px;
+	border-radius: 6px 6px 0 0;
+	margin-right: 2px;
+	font-size: 12px;
+	transition: all 0.8s ease-in-out;
+	webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+#main-menu > li > a:hover, 
+#main-menu > li > a:focus 
+{
+    background: #4CAB7C;
+    color: #fff;
+}
+#main-menu > li > ul.submenu {
+	text-transform: uppercase;
+	color: #777;
+}
+#main-menu > li:hover > ul.submenu {
+	display: block;
+}
+#main-menu > li > ul.submenu li a {
+    text-transform: uppercase;
+    color: #777;
+    padding: 9px 12px;
+	transition: all 0.8s ease-in-out;
+	webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+#main-menu > li > ul.submenu li a:hover 
+{
+	background: #4CAB7C;
+	color: #fff;
+}
+/* ---------* end: Header *----------- */
+
+
+/* ---------* Body *------------------ */
+.banner {
+	min-height: 400px;
+}
+.ls-l {
+	left: 0 !important;
+}
+#first-slider {
+	border-right: 3px solid #fff;
+}
+h2.ls-l.slide-heading-text {
+    background: rgba(0,0,0,.5);
+    color: #fff;
+    padding: 10px 15px!important;
+}
+#first-slider h2.ls-l.slide-heading-text {
+    margin-top: 335px !important;
+    position: relative;
+    float: right;
+}
+#second-slider h2.ls-l.slide-heading-text {
+	margin-top: 15px !important;
+}
+.img-slide {
+	width: 100% !important;
+}
+#post-contents h1 {
+    text-transform: uppercase;
+    color: #4A4646;
+    letter-spacing: 3px;
+    font-size: 36px;
+    margin: 30px 0;
+}
+.box-lists {
+    overflow: hidden;
+    margin: 7px 0px;
+    border: 1px solid #E0E0E0;
+    padding: 12px 0 0;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+}
+.content-text h4 {
+    font-size: 14px;
+    margin: 0;
+    margin-bottom: 3px;
+    text-transform: uppercase;
+}
+.content-text p {
+	font-size: 13px;
+}
+#side-article h2 {
+	font-size: 24px;
+	margin: 45px 0 25px;
+}
+a.article-link {
+    display: block;
+    font-size: 14px;
+    text-transform: uppercase;
+    width: 100%;
+    background-color: #8BC543;
+    margin: 10px 0px;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+	transition: all 0.8s ease-in-out;
+	webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+a.article-link:hover {
+	background-image: -o-linear-gradient(left, #00ACEB 0%, #8BC543 62%);
+	background-image: -moz-linear-gradient(left, #00ACEB 0%, #8BC543 62%);
+	background-image: -webkit-linear-gradient(left, #00ACEB 0%, #8BC543 62%);
+	background-image: -ms-linear-gradient(left, #00ACEB 0%, #8BC543 62%);
+	background-image: linear-gradient(to left, #00ACEB 0%, #8BC543 62%);
+}
+/* ---------* end: Body *------------- */
+
+
+/* ---------* Footer *---------------- */
+footer {
+
+}
+.copyright {
+
+}
+/* ---------* end: Footer *----------- */
+
+
+/* ---------* Custom *---------------- */
+.horizontal-separator {
+    background-image: -o-linear-gradient(left, #00ACEB 0%, #8BC543 62%);
+    background-image: -moz-linear-gradient(left, #00ACEB 0%, #8BC543 62%);
+    background-image: -webkit-linear-gradient(left, #00ACEB 0%, #8BC543 62%);
+    background-image: -ms-linear-gradient(left, #00ACEB 0%, #8BC543 62%);
+    background-image: linear-gradient(to left, #00ACEB 0%, #8BC543 62%);
+    height: 4px;
+    width: 100%;
+    margin: auto;
+}
+.img-responsive {
+	width: 100%;
+}
+.overflow {
+	overflow: hidden;
+}
+.remove-margins {
+	margin: 0;
+}
+.remove-side-padding {
+	padding-right: 0!important;
+	padding-left: 0!important;
+}
+.remove-left-padding {
+	padding-left: 0!important;
+}
+.remove-right-padding {
+	padding-right: 0!important;
+}
+.head-color {
+	height: 7px;
+	float: left;
+	display: inline-block;
+}
+.green-a {
+	background: #6dbc49;
+	width: 14.285%;
+}
+.green-b {
+	background: #5aae61;
+	width: 14.285%;
+}
+.green-c {
+	background: #46a178;
+	width: 14.285%;
+}
+.blue-a {
+	background: #229290;
+	width: 14.285%;
+}
+.blue-b {
+	background: #0083a3;
+	width: 14.285%;
+}
+.blue-c {
+	background: #007aae;
+	width: 14.285%;
+}
+.blue-d {
+	background: #0073b8;
+	width: 14.285%;
+}
+.container-fixed {
+	position: fixed;
+	/*overflow: hidden;*/
+	width: 100%;
+	background-color: #fff;
+	padding-top: 15px;
+	z-index: 10;
+}
+.full-width {
+	width: 100%;
+}
+.overflow {
+	overflow: hidden;
+}
+/* ---------* end: Custom *----------- */
+
+
+/* ---------* Override Bootstrap *---- */
+.nav > li > a:hover, 
+.nav > li > a:focus
+{
+	text-decoration: none;
+	background: none;
+}
+.ls-bottom-nav-wrapper {
+	display: none;
+}
+.panel {
+	margin-bottom: 0;
+}
+.navbar {
+	margin-bottom: 0;
+}
+/* ---------* end: Override *--------- */

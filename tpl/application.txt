@@ -1,0 +1,175 @@
+<!-- APPLICATIONS -->
+			<section class="post-wrapper">
+				<div class="post-content">
+					<br>
+					<div class="post-description-wrapper">
+						<div class="post-heading text-center">
+							<div class="horizontal-separator"></div>
+							<label><strong>Applications</strong></label>
+						</div>
+						<div class="post-text-description applications">
+							<article class="app-content">
+								<div class="row ">
+									<div class="col-lg-3" style="width:120px">
+										<img src="img/content_img/1__Geotechnical_drilling_rig.jpg">
+									</div>
+									<div class="col-lg-9 ">
+										<div class="row">
+											<h5><b>GEOTECHNICAL DRILLING RIGS</b></h5>	
+										</div>
+										<div class="row">
+											<p>
+												The Massenza Drilling Rigs company develops and manufactures geotechnical drilling rigs. The machines are exported all over the world. Discover more…
+											</p>
+										</div>	
+									</div>
+								</div>
+							</article>
+							<article class="app-content">
+								<div class="row ">
+									<div class="col-lg-3" style="width:120px">
+										<img src="img/content_img/1__Geotechnical_drilling_rig.jpg">
+									</div>
+									<div class="col-lg-9 ">
+										<div class="row">
+											<h5><b>GEOTECHNICAL DRILLING RIGS</b></h5>	
+										</div>
+										<div class="row">
+											<p>
+												The Massenza Drilling Rigs company develops and manufactures geotechnical drilling rigs. The machines are exported all over the world. Discover more…
+											</p>
+										</div>	
+									</div>
+								</div>
+							</article>
+							<article class="app-content">
+								<div class="row ">
+									<div class="col-lg-3" style="width:120px">
+										<img src="img/content_img/1__Geotechnical_drilling_rig.jpg">
+									</div>
+									<div class="col-lg-9 ">
+										<div class="row">
+											<h5><b>GEOTECHNICAL DRILLING RIGS</b></h5>	
+										</div>
+										<div class="row">
+											<p>
+												The Massenza Drilling Rigs company develops and manufactures geotechnical drilling rigs. The machines are exported all over the world. Discover more…
+											</p>
+										</div>	
+									</div>
+								</div>
+							</article>
+							<article class="app-content">
+								<div class="row ">
+									<div class="col-lg-3" style="width:120px">
+										<img src="img/content_img/1__Geotechnical_drilling_rig.jpg">
+									</div>
+									<div class="col-lg-9 ">
+										<div class="row">
+											<h5><b>GEOTECHNICAL DRILLING RIGS</b></h5>	
+										</div>
+										<div class="row">
+											<p>
+												The Massenza Drilling Rigs company develops and manufactures geotechnical drilling rigs. The machines are exported all over the world. Discover more…
+											</p>
+										</div>	
+									</div>
+								</div>
+							</article>
+							<article class="app-content">
+								<div class="row ">
+									<div class="col-lg-3" style="width:120px">
+										<img src="img/content_img/1__Geotechnical_drilling_rig.jpg">
+									</div>
+									<div class="col-lg-9 ">
+										<div class="row">
+											<h5><b>GEOTECHNICAL DRILLING RIGS</b></h5>	
+										</div>
+										<div class="row">
+											<p>
+												The Massenza Drilling Rigs company develops and manufactures geotechnical drilling rigs. The machines are exported all over the world. Discover more…
+											</p>
+										</div>	
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- PROSSIMI EVENTI -->
+			<section class="post-wrapper">
+				<div class="post-content">
+					<br>
+					<div class="post-description-wrapper">
+						<div class="post-heading text-center">
+							<div class="horizontal-separator"></div>
+							<label><strong>PROSSIMI EVENTI</strong></label>
+						</div>
+						<div class="post-text-description applications">
+							<article class="app-content">
+								<div class="row ">
+									<div class="col-lg-3" style="width:120px">
+										<img src="img/content_img/166__Solscope_2015_Lyon_France.jpg">
+									</div>
+									<div class="col-lg-9">
+										<div class="row">
+											<div class="col-lg-12">
+												<label><b>SOLSCOPE 2015 - FRANCE</b></label>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-lg-12">
+											</div>
+										</div>
+									</div>
+								</div>
+								<br>
+								<div class="row">
+									<div class="col-lg-12">
+										<p>Massenza & E.P.D. will attend to Solscope Exposition 2015 in Lyon (France), from 24th to 25th June.</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-lg-12">
+										<a href="#">www.solscope.fr</a>
+									</div>
+								</div>
+							</article>
+							<article class="app-content">
+								<div class="row ">
+									<div class="col-lg-3" style="width:120px">
+										<!-- <img src="img/content_img/55__UK_Geotechnica_2015.jpg"> -->
+									</div>
+									<div class="col-lg-9">
+										<div class="row">
+											<div class="col-lg-12">
+												<label><b>GEOTECHNICA 2015 - UNITED KINGDOM</b></label>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-lg-12">
+											</div>
+										</div>
+									</div>
+								</div>
+								<br>
+								<div class="row">
+									<div class="col-lg-12">
+										<p>Massenza & Rockbit UK will be glad to welcome you in Geotechnica 2015 at Warwickshire Exhibition Centrefrom 8th to 9th July.
+										</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-lg-12">
+										<a href="#">www.equipegroup.com</a>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			

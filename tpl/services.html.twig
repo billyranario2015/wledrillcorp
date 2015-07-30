@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheet %}
+	<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+	<section class="post-wrapper">
+		<div class="post-content full-width overflow">
+			<div class="col-md-4 remove-side-padding">
+				<div class="post-image">
+					<div class="fotorama" data-nav="thumbs">
+						{% for c in data.services %}
+							<img  data-thumb="img/services/{{c}}" src="img/gallery/{{c}}" class="img-responsive">
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+			<div class="col-md-8">
+				<div class="post-heading text-center">
+					<div class="horizontal-separator"></div>
+					<label><strong>services</strong></label>
+				</div>
+				<div class="post-text-description applications">
+					<article>
+						<p>We love Equipment Corporation provides good service towards our customers by providing our customers honest and excellent service.</p>
+
+						<p>We Love Equipment Corporation provides Mechanical, Hydraulic & Electronic check up&repair for backhoe and heavy Equipment purchased directly to us.</p>
+
+						<p>In addition to that we also provide heavy equipment parts such as <i>Oil filters</i>, <i>Air  filters</i>, <i>haydrauli filters</i>,  <i>oil rings</i>, <i>breakers</i>, <i>buckets</i> and other construction tools.</p>
+
+						<p>for more information please visit our office located at Kauswagan, St. Dominique street, Cagayan de Oro City or you may call us at (088) 350-5808, (08822) 74-5351. “We love Equipment as Well as You”.</p>
+					</article>
+				</div>
+			</div>
+		</div>
+	</section>
+
+{% endblock %}
+
+{% block scripts %}
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+{% endblock %}

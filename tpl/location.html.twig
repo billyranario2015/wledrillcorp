@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+			<section class="post-wrapper  wow bounceInDown">
+				<div class="post-content full-width">
+					<div class="row">
+						<div class="col-lg-12">
+							<div id="map-canvas"></div>
+						</div>
+					</div>
+					<br>
+					<div class="row">
+						<div class="col-lg-12" style="text-align:center;">
+							<label>Zone 4, Doyugan Sinaloc, El Salvador City 9017 Philippines</label>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<style>
+		      #map-canvas {
+		        height: 400px;
+		      }
+
+		    </style>
+		    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+		    <script>
+				var map;
+				var WL = new google.maps.LatLng(8.5687328,124.5152003);
+				function initialize() {
+				  map = new google.maps.Map(document.getElementById('map-canvas'), {
+				    zoom: 15,
+				    center: WL
+				  });
+				
+				var marker = new google.maps.Marker({
+				      position: WL,
+				      map: map,
+				      title: 'Marker'
+				  });
+				var infowindow = new google.maps.InfoWindow({
+				      content: '<center><label><b>WE LOVE EQUIPMENT<br>CORPORATION</b></label></center>'
+				  });
+				infowindow.open(map,marker);
+				}
+				google.maps.event.addDomListener(window, 'load', initialize);
+
+		    </script>
+{% endblock %}
+			
+
+			
