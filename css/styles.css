@@ -133,7 +133,10 @@ h2.ls-l.slide-heading-text {
     color: #4A4646;
     letter-spacing: 3px;
     font-size: 36px;
-    margin: 30px 0;
+    margin: 30px 0 10px;
+}
+.heading-post {
+	margin-bottom: 30px;
 }
 .box-lists {
     overflow: hidden;
@@ -166,12 +169,6 @@ a.article-link {
     padding: 10px;
     color: #fff;
     text-decoration: none;
-	transition: all 0.8s ease-in-out;
-	webkit-transition: all 0.5s ease-in-out;
-	-moz-transition: all 0.5s ease-in-out;
-	-ms-transition: all 0.5s ease-in-out;
-	-o-transition: all 0.5s ease-in-out;
-	transition: all 0.5s ease-in-out;
 }
 a.article-link:hover {
 	background-image: -o-linear-gradient(left, #00ACEB 0%, #8BC543 62%);
@@ -188,11 +185,7 @@ footer {
 
 }
 .copyright {
-	font-size: 11px;
-	color: #777;
-	margin: 0;
-	padding: 18px 0 15px;
-	text-transform: uppercase;
+
 }
 /* ---------* end: Footer *----------- */
 

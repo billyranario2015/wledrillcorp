@@ -14,7 +14,7 @@
 	$action = '';
 	if (isset($_GET['action'])) $action = $_GET['action'];
 
-
+	echo basename($_SERVER['REQUEST_URI']);
 
 	/* ------------------- Loads Images in the folder ------- */
 	$data = array();
