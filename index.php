@@ -14,8 +14,16 @@
 	$action = '';
 	if (isset($_GET['action'])) $action = $_GET['action'];
 
-	echo basename($_SERVER['REQUEST_URI']);
+	/* ------------------- Gets URI to add language --------- */
+	$basename = '';
 
+	if ( basename($_SERVER['REQUEST_URI']) )
+		$basename = basename($_SERVER['REQUEST_URI']);
+	else 
+		$basename = '';
+	
+
+	
 	/* ------------------- Loads Images in the folder ------- */
 	$data = array();
 	if ( $page == 'gallery' ) {
@@ -50,7 +58,8 @@
 			array(
 				'pagename' 	=> $page,
 				'data'		=> $data,
-				'alert_msg' => $alert_msg
+				'alert_msg' => $alert_msg,
+				'basename'  => $basename
 			)
 		);
 	} catch(Exception $e) {

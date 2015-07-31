@@ -106,6 +106,14 @@ header {
 .banner {
 	min-height: 400px;
 }
+#banner-wrapper {
+	background: url( '../img/slider-bg.jpg' );
+	background-size: cover; 
+}
+#banner-wrapper2 {
+	background: url( '../img/slider-bg2.jpg' );
+	background-size: cover; 
+}
 .ls-l {
 	left: 0 !important;
 }
