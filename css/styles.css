@@ -4,6 +4,18 @@
     font-family: 'tahoma-font';
     src: url('../fonts/Tahoma.ttf')  format('truetype');
 }
+@font-face {
+    font-family: 'railway-md';
+    src: url('../fonts/Raleway-Medium.ttf')  format('truetype');
+}
+@font-face {
+    font-family: 'railway-reg';
+    src: url('../fonts/Raleway-Regular.ttf')  format('truetype');
+}
+@font-face {
+    font-family: 'railway-sb';
+    src: url('../fonts/Raleway-SemiBold.ttf')  format('truetype');
+}
 
 /* ---------* Reset CSS *------------ */
 * { 
@@ -24,19 +36,27 @@ h1 {
     font-size: 2.2em; 
 } 
 h2 { 
+    font-family: 'railway-md';
     font-size: 2.0em;     
 } 
 h3 { 
+    font-family: 'railway-md';
     font-size: 1.8em; 
 } 
 h4 { 
     font-size: 1.6em;     
+    font-family: 'railway-md';
 } 
 h5 { 
+    font-family: 'railway-md';
     font-size: 1.4em;     
 } 
 p { 
-    font-size: 13px;
+    font-size: 14px;
+    font-family: 'railway-reg';
+}
+label {
+    font-family: 'railway-reg';
 }
 
 /*th{
@@ -199,6 +219,11 @@ a.article-link:hover {
 .mission-vission {
 	margin-bottom: 20px;
 }
+.mission-vission h4,
+.career h4
+{
+	margin-bottom: -15px;
+}
 /* ---------* end: Body *------------- */
 
 
@@ -207,7 +232,10 @@ footer {
 
 }
 .copyright {
-
+    padding: 15px 0;
+}
+.copyright p {
+	margin: 0px;
 }
 /* ---------* end: Footer *----------- */
 
