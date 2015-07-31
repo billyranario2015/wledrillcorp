@@ -13,6 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="css/hover-min.css">
 	<link rel="stylesheet" type="text/css" href="css/layerslider.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
 	{% block stylesheet %}{% endblock %}
 </head>
 <body>
@@ -39,8 +40,8 @@
 									Wika <span class="caret"></span>
 								</a>
 								<ul class="dropdown-menu">
-									<li><a href='index.php?lang=en'>English</a></li>
-									<li><a href="index.php?lang=ph">Tagalog</a></li>
+									<li><a href='{{basename}}&lang=en'>English</a></li>
+									<li><a href="{{basename}}&lang=ph">Tagalog</a></li>
 								</ul>
 							</div>
 						</div>

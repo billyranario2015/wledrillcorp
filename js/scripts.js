@@ -9,4 +9,6 @@ $( document ).ready( function() {
 
 	new WOW().init();
 
+	$('.grouped_elements').fancybox();
+
 } );

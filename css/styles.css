@@ -161,6 +161,9 @@ h2.ls-l.slide-heading-text {
     border-radius: 4px;
     background-color: #f8f8f8;
 }
+.box-lists p {
+	text-align: justify;
+}
 .content-text h4 {
     font-size: 14px;
     margin: 0;
@@ -193,6 +196,9 @@ a.article-link:hover {
 	background-image: -ms-linear-gradient(left, #00ACEB 0%, #8BC543 62%);
 	background-image: linear-gradient(to left, #00ACEB 0%, #8BC543 62%);
 }
+.mission-vission {
+	margin-bottom: 20px;
+}
 /* ---------* end: Body *------------- */
 
 
@@ -217,6 +223,15 @@ footer {
     width: 100%;
     margin: auto;
 }
+
+.post-heading label{
+    height: 20px;
+   	padding: 0 10px 0 10px;
+    background: #F8F8F8;
+    position: relative;
+    top: -25px;
+}
+
 .img-responsive {
 	width: 100%;
 }

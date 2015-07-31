@@ -30,17 +30,22 @@
 	$basename = '';
 
 	if ( basename($_SERVER['REQUEST_URI']) )
-		$basename = $servername . '/' . basename($_SERVER['REQUEST_URI']) . '&&' ;
-	else {
-		$basename = $servername . '/' . 'index.php?';
-	}
+		$basename = trim_language_url( $servername . '/' . basename($_SERVER['REQUEST_URI']) . '&&' ) ;
+	else 
+		$basename = trim_language_url( $servername . '/' . 'index.php?' ) ;
 	
-	// echo "<br>".$basename;
+
+
 
 	/* ------------------- Loads Images in the folder ------- */
 	$data = array();
 	if ( !isset($_GET['page']) ) {
 		$page = 'home';
+	}
+	if ( $page == 'accessories' ) {
+		$dir = 'img/parts';
+		$files = array_diff(scandir($dir), array('..', '.'));
+		$data['gallery'] = $files;
 	}
 	if ( $page == 'gallery' ) {
 		$dir = 'img/gallery';

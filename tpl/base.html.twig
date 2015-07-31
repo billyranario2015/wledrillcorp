@@ -13,6 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="css/hover-min.css">
 	<link rel="stylesheet" type="text/css" href="css/layerslider.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
 	{% block stylesheet %}{% endblock %}
 </head>
 <body>
@@ -39,8 +40,8 @@
 									Language <span class="caret"></span>
 								</a>
 								<ul class="dropdown-menu">
-									<li><a href='index.php?lang=en'>English</a></li>
-									<li><a href="index.php?lang=ph">Tagalog</a></li>
+									<li><a href='{{basename}}&lang=en'>English</a></li>
+									<li><a href="{{basename}}&lang=ph">Tagalog</a></li>
 								</ul>
 							</div>
 						</div>
@@ -58,7 +59,7 @@
 									<a href="index.php?page=mission-vision">Mission and Vision</a>
 								</li>
 								<li>
-									<a href="#">Careers</a>
+									<a href="index.php?page=career">Careers</a>
 								</li>
 							</ul>
 						</li>
@@ -131,7 +132,7 @@
 				<div class="article-content overflow">
 					<div class="box-container">
 						<a href="index.php?page=drilling-overview" class="article-link"><i class="fa fa-angle-double-right"></i> drilling overview</a>
-						<a href="index.php?page=drilling-machines" class="article-link"><i class="fa fa-angle-double-right"></i> drilling machines</a>
+						<a href="index.php?page=drilling-machine" class="article-link"><i class="fa fa-angle-double-right"></i> drilling machines</a>
 						<a href="index.php?page=drilling-diagram" class="article-link"><i class="fa fa-angle-double-right"></i> drilling service diagram</a>
 						<a href="index.php?page=work-force" class="article-link"><i class="fa fa-angle-double-right"></i> work force</a>
 						<a href="index.php?page=drilling-rates" class="article-link"><i class="fa fa-angle-double-right"></i> drilling rate</a>
@@ -177,6 +178,8 @@
 	<script type="text/javascript" src="js/layerslider.transitions.js"></script>
 	<script type="text/javascript" src="js/wow.min.js"></script>
 	<script type="text/javascript" src="js/parallax.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
 	{% block scripts %}{% endblock %}
 
