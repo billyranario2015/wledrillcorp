@@ -33,8 +33,6 @@
 		$basename = trim_language_url( $servername . '/' . basename($_SERVER['REQUEST_URI']) . '&&' ) ;
 	else 
 		$basename = trim_language_url( $servername . '/' . 'index.php?' ) ;
-	
-
 
 
 	/* ------------------- Loads Images in the folder ------- */
@@ -52,7 +50,8 @@
 		$files = array_diff(scandir($dir), array('..', '.'));
 		$data['gallery'] = $files;
 	}
-	if ( $page == 'gallery-drills' ) {
+
+	if ( $page == 'gallery' ) {
 		$dir = 'img/gallery';
 		$files = array_diff(scandir($dir), array('..', '.'));
 		$data['gallery'] = $files;
