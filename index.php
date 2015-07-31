@@ -23,6 +23,11 @@
 		$files = array_diff(scandir($dir), array('..', '.'));
 		$data['gallery'] = $files;
 	}
+	if ( $page == 'accessories' ) {
+		$dir = 'img/parts';
+		$files = array_diff(scandir($dir), array('..', '.'));
+		$data['gallery'] = $files;
+	}
 	if ( $page == 'gallery' ) {
 		$dir = 'img/gallery';
 		$files = array_diff(scandir($dir), array('..', '.'));
