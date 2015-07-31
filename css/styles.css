@@ -38,6 +38,10 @@ h5 {
 p { 
     font-size: 1.2em;     
 }
+
+/*th{
+	text-align:center;
+}*/
 /*
 /* ---------* end: Reset CSS *------- */
 
@@ -153,6 +157,7 @@ h2.ls-l.slide-heading-text {
 	font-size: 13px;
 }
 #side-article h2 {
+
 	font-size: 24px;
 	margin: 45px 0 25px;
 }

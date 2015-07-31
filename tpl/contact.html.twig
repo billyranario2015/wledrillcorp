@@ -1,70 +1,98 @@
 {% extends 'base.html.twig' %}
 
-{% block stylesheet %}
-	<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
-{% endblock %}
-
 {% block content %}
+	<br>
+	<br>
 	<section class="post-wrapper">
 		<div class="post-content full-width overflow">
-			<div class="col-md-4 remove-side-padding">
-				<div class="post-image">
-					<div class="img-wrapper">
-						<img src="img/map.jpg" class="img-responsive">
+			<div class="row">
+				<div class="col-md-12 remove-side-padding">
+					<div class="post-image">
+						<div class="img-wrapper">
+							<img src="img/map.jpg" class="img-responsive">
+						</div>
+						<div class="contact-info">
+							
+						</div>
 					</div>
-					<div class="contact-info">
-						<div class="info-box">
-							<p><strong>Mr. Han Kook Nam</strong></p>
-							<p>C.E.O</p>
-							<p>Cel no: 09177207200 (Globe)</p>
-							<p>+82 10 3878 3615 (S. Korea)</p>
-						</div>
-
-						<div class="info-box">
-							<p><strong>Ms. Eunice T. Langit</strong></p>
-							<p>Manager</p>
-							<p>Malaybalay, Bukidnon Branch</p>
-							<p>Cel no: 09061262996 (Globe)</p>
-						</div>
+					<br>
+					<br>
+					<div class="post-heading text-center">
+						<div class="horizontal-separator"></div>
+						<h4><label><strong>Contact Us</strong></label></h4>
 					</div>
 				</div>
 			</div>
-			<div class="col-md-8">
-				<div class="post-heading text-center">
-					<div class="horizontal-separator"></div>
-					<label><strong>Contact Us</strong></label>
-				</div>
-				<div class="post-text-description">
-				    
-					{% if alert_msg == "success" %}
-					    <p class="alert alert-success" style="font-size:12px;"><i class="fa fa-check-circle"></i>  Your message was successfully sent.</p>
-					{% elseif alert_msg == "error" %}
-					    <p class="alert alert-danger" style="font-size:12px;"><i class="fa fa-exclamation-circle"></i>  There was an error on in sending your message. Please try again later.</p>
-					{% endif %}
+			<br>
 
-					<form action="index.php?page=contact&&action=send-inquiry" method="post">
-						<div class="form-group">
-							<label>Name</label>
-							<input type="text" name="client_name" class="form-control" required placeholder="Your Name">
-						</div>
-						<div class="form-group">
-							<label>Email</label>
-							<input type="email" name="client_email" class="form-control" required placeholder="Your Email">
-						</div>
-						<div class="form-group">
-							<label>Message</label>
-							<textarea rows="10" name="client_msg" class="form-control" required placeholder="Enter your message here"></textarea>
-						</div>
-						<button name="submit_msg" class="btn btn-success hvr-icon-wobble-horizontal">
-							Submit Inquiry
-						</button>
-					</form>
+			<div class="row">
+				<div class="col-md-6">
+					    	<div class="info-box">
+								<p><strong>Mr. Han Kook Nam</strong></p>
+								<p>C.E.O</p>
+								<p>Cel no: 09177207200 (Globe)</p>
+								<p>+82 10 3878 3615 (S. Korea)</p>
+								<p>Email: mrkoreahan@gmail.com</p>
+							</div>
+
+							<div class="info-box">
+								<p><strong>Ms. Eunice T. Langit</strong></p>
+								<p>Manager</p>
+								<p>Malaybalay, Bukidnon Branch</p>
+								<p>Cel no: 09061262996 (Globe)</p>
+							</div>
+				</div>
+				<div class="col-md-6">
+
+							<div class="info-box">
+								<p><strong>Mr. Ivan Gay R. Tagaygay</strong></p>
+								<p>Marketing/Purchaser</p>
+								<p>Cel no: 09177946677 (Globe)</p>
+								<p>Email: i.rtagaygay@gmail.com</p>
+							</div>
+
+							<div class="info-box">
+								<p><strong>Mr. Oswaldo C. Lago</strong></p>
+								<p>Yard Supervisor</p>
+								<p>Cel no: 09177147200 (Globe)</p>
+								<p>Email: oswaldolago0402@gmail.com</p>
+							</div>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="post-heading text-center">
+						<div class="horizontal-separator"></div>
+					</div>
+					<br>
+					{% if alert_msg == "success" %}
+						    <p class="alert alert-success" style="font-size:12px;"><i class="fa fa-check-circle"></i>  Your message was successfully sent.</p>
+						{% elseif alert_msg == "error" %}
+						    <p class="alert alert-danger" style="font-size:12px;"><i class="fa fa-exclamation-circle"></i>  There was an error on in sending your message. Please try again later.</p>
+						{% endif %}
+
+						<form action="index.php?page=contact&&action=send-inquiry" method="post">
+							<div class="form-group">
+								<label>Name</label>
+								<input type="text" name="client_name" class="form-control" required placeholder="Your Name">
+							</div>
+							<div class="form-group">
+								<label>Email</label>
+								<input type="email" name="client_email" class="form-control" required placeholder="Your Email">
+							</div>
+							<div class="form-group">
+								<label>Message</label>
+								<textarea rows="10" name="client_msg" class="form-control" required placeholder="Enter your message here"></textarea>
+							</div>
+							<button name="submit_msg" class="btn btn-success hvr-icon-wobble-horizontal">
+								Submit Inquiry
+							</button>
+						</form>
 				</div>
 			</div>
 		</div>
+		
 	</section>
+	<br>
 {% endblock %}
-
-{% block scripts %}
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
-{% endblock %}	
