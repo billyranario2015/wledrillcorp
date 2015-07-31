@@ -36,7 +36,7 @@ h5 {
     font-size: 1.4em;     
 } 
 p { 
-    font-size: 1.2em;     
+    font-size: 13px;
 }
 
 /*th{
@@ -102,6 +102,9 @@ header {
 {
 	background: #4CAB7C;
 	color: #fff;
+}
+.language-selection a {
+	cursor: pointer;
 }
 /* ---------* end: Header *----------- */
 

@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheet %}
+	<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+	<section class="post-wrapper">
+		<div class="post-content full-width">
+			<div class="post-image">
+				<div class="fotorama" data-nav="thumbs">
+					{% for c in data.gallery %}
+						<img  data-thumb="img/parts/{{c}}" src="img/parts/{{c}}" class="img-responsive">
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</section>
+
+{% endblock %}
+
+{% block scripts %}
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+{% endblock %}

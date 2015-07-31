@@ -7,8 +7,6 @@ $( document ).ready( function() {
 		layersContainer: 960
     });
 
-
 	new WOW().init();
-
 
 } );

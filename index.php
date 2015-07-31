@@ -1,9 +1,20 @@
 <?php 
-
+	session_start();
+	
 	require_once 'vendor/autoload.php';
 	require_once 'inc/functions.php';
+	require_once 'sessions.php';
 
-	$loader = new Twig_Loader_Filesystem('tpl');
+	$servername = 'http://' . $_SERVER['SERVER_NAME'];
+
+	$template_dir = 'tpl';
+
+	if ( $_SESSION['dir'] ) {
+		$template_dir = $_SESSION['dir'];
+	}
+	// echo $template_dir;
+
+	$loader = new Twig_Loader_Filesystem( $template_dir );
 	$twig = new Twig_Environment($loader);
 
 	$req = trim($_SERVER["REQUEST_URI"], '/');
@@ -14,22 +25,22 @@
 	$action = '';
 	if (isset($_GET['action'])) $action = $_GET['action'];
 
+
 	/* ------------------- Gets URI to add language --------- */
 	$basename = '';
 
 	if ( basename($_SERVER['REQUEST_URI']) )
-		$basename = basename($_SERVER['REQUEST_URI']);
-	else 
-		$basename = '';
+		$basename = $servername . '/' . basename($_SERVER['REQUEST_URI']) . '&&' ;
+	else {
+		$basename = $servername . '/' . 'index.php?';
+	}
 	
+	// echo "<br>".$basename;
 
-	
 	/* ------------------- Loads Images in the folder ------- */
 	$data = array();
-	if ( $page == 'equipments' ) {
-		$dir = 'img/gallery';
-		$files = array_diff(scandir($dir), array('..', '.'));
-		$data['gallery'] = $files;
+	if ( !isset($_GET['page']) ) {
+		$page = 'home';
 	}
 	if ( $page == 'gallery' ) {
 		$dir = 'img/gallery';
@@ -37,7 +48,7 @@
 		$data['gallery'] = $files;
 	}
 	if ( $page == 'gallery-drills' ) {
-		$dir = 'img/gallery';
+		$dir = 'img/gallery-drills';
 		$files = array_diff(scandir($dir), array('..', '.'));
 		$data['gallery'] = $files;
 	}
@@ -64,7 +75,7 @@
 				'pagename' 	=> $page,
 				'data'		=> $data,
 				'alert_msg' => $alert_msg,
-				'basename'  => $basename
+				'basename'	=> $basename
 			)
 		);
 	} catch(Exception $e) {
