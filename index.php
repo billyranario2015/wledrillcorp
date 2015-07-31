@@ -19,7 +19,7 @@
 	/* ------------------- Loads Images in the folder ------- */
 	$data = array();
 	if ( $page == 'equipments' ) {
-		$dir = 'img/gallery';
+		$dir = 'img/equipments';
 		$files = array_diff(scandir($dir), array('..', '.'));
 		$data['gallery'] = $files;
 	}
