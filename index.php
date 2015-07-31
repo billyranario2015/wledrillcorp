@@ -9,7 +9,7 @@
 
 	$template_dir = 'tpl';
 
-	if ( $_SESSION['dir'] ) {
+	if ( isset($_SESSION['dir']) ) {
 		$template_dir = $_SESSION['dir'];
 	}
 	// echo $template_dir;
@@ -53,7 +53,7 @@
 		$data['gallery'] = $files;
 	}
 	if ( $page == 'gallery-drills' ) {
-		$dir = 'img/gallery-drills';
+		$dir = 'img/gallery';
 		$files = array_diff(scandir($dir), array('..', '.'));
 		$data['gallery'] = $files;
 	}
