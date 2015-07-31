@@ -26,13 +26,18 @@
 	
 	/* ------------------- Loads Images in the folder ------- */
 	$data = array();
+	if ( $page == 'equipments' ) {
+		$dir = 'img/gallery';
+		$files = array_diff(scandir($dir), array('..', '.'));
+		$data['gallery'] = $files;
+	}
 	if ( $page == 'gallery' ) {
 		$dir = 'img/gallery';
 		$files = array_diff(scandir($dir), array('..', '.'));
 		$data['gallery'] = $files;
 	}
 	if ( $page == 'gallery-drills' ) {
-		$dir = 'img/gallery-drills';
+		$dir = 'img/gallery';
 		$files = array_diff(scandir($dir), array('..', '.'));
 		$data['gallery'] = $files;
 	}
