@@ -11,4 +11,9 @@ $( document ).ready( function() {
 
 	$('.grouped_elements').fancybox();
 
+	$('a[data-toggle="tab"]').click(function (e) {
+	    $('.dropdown-menu li.active').removeClass('active');
+	    // $(this).parent('li').addClass('active');
+	})
+
 } );

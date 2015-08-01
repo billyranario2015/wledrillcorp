@@ -59,9 +59,9 @@ label {
     font-family: 'railway-reg';
 }
 
-/*th{
+th{
 	text-align:center;
-}*/
+}
 /*
 /* ---------* end: Reset CSS *------- */
 
@@ -224,6 +224,45 @@ a.article-link:hover {
 {
 	margin-bottom: -15px;
 }
+
+#circle {
+	width: 8in;
+	height: 8in;
+	background: #666699;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+#circle2 {
+	width: 6in;
+	height: 6in;
+	margin:auto auto;
+	position:relative;
+	top:1in; 
+	bottom:1in;
+	background: #9494B8;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+#circle3 {
+	width: 4in;
+	height: 4in;
+	margin:auto auto;
+	position:relative;
+	top:1in; 
+	bottom:1in;
+	background: #455D6C;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.table-label{
+	position:absolute;
+	top:-40px;
+}		
+
 /* ---------* end: Body *------------- */
 
 
@@ -326,6 +365,23 @@ footer {
 .overflow {
 	overflow: hidden;
 }
+
+.img-hvr{
+	transition: all .2s ease-in-out; 
+}
+.img-hvr:hover { 
+	transform: scale(1.1); 
+}
+
+.font-sm tr td{
+	font-size: 10px;
+	font-weight: 600;
+	text-align: center;
+}
+
+.tr-font th{
+	font-size: 13px;
+}	
 /* ---------* end: Custom *----------- */
 
 
