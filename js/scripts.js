@@ -11,12 +11,9 @@ $( document ).ready( function() {
 
 	$('.grouped_elements').fancybox();
 
-	$( '.tab-rates' ).click( function() {
-		var tab_id 		= $( this ).attr( 'aria-controls' );
-		// $( 'div#'+ tab_id ).addClass( 'active' );
-		$( '#ddown li' ).removeClass( 'active' );
-	
-	} );
-
+	$('a[data-toggle="tab"]').click(function (e) {
+	    $('.dropdown-menu li.active').removeClass('active');
+	    // $(this).parent('li').addClass('active');
+	})
 
 } );

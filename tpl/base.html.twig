@@ -32,14 +32,14 @@
 					</button>
 					<div class="row">
 						<div class="col-md-4">
-							<a class="navbar-brand" href="/">
+							<a class="navbar-brand" href="index.php">
 								<img src="img/logo-title.png" class="img-responsive">
 							</a>
 						</div>
 						<div class="col-md-8 language-selection">
 							<div class="btn-group pull-right language">
-								<a type="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-									Language <span class="caret"></span>
+								<a type="button" class="dropdown-toggle btn btn-default" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									{{ translations['language'] }} <span class="caret"></span>
 								</a>
 								<ul class="dropdown-menu">
 									<li><a href='{{basename}}&lang=en'>English</a></li>
@@ -51,6 +51,9 @@
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav navbar-right" id="main-menu">
+						<li>
+							<a href="index.php">Home</a>
+						</li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">about us <span class="caret"></span></a>
 							<ul class="dropdown-menu submenu">
@@ -69,7 +72,7 @@
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">products <span class="caret"></span></a>
 							<ul class="dropdown-menu submenu">
 								<li>
-									<a href="index.php?page=equipments">Heavy Equipments</a>
+									<a href="index.php?page=equipments">Heavy Equipment</a>
 								</li>
 								<li>
 									<a href="index.php?page=accessories">Part and Accessories</a>
@@ -130,13 +133,13 @@
 				{% block content %}{% endblock %}
 			</div>
 			<div class="col-md-4" id="side-article">
-				<h2>What's special about us?</h2>
+				<h2>{{ translations['side_heading'] }}</h2>
 				<div class="article-content overflow">
 					<div class="box-container">
 						<a href="index.php?page=drilling-overview" class="article-link"><i class="fa fa-angle-double-right"></i> drilling overview</a>
 						<a href="index.php?page=drilling-machine" class="article-link"><i class="fa fa-angle-double-right"></i> drilling machines</a>
 						<a href="index.php?page=drilling-diagram" class="article-link"><i class="fa fa-angle-double-right"></i> drilling service diagram</a>
-						<a href="index.php?page=work-force" class="article-link"><i class="fa fa-angle-double-right"></i> work force</a>
+						<a href="index.php?page=workforce" class="article-link"><i class="fa fa-angle-double-right"></i> work force</a>
 						<a href="index.php?page=drilling-rates" class="article-link"><i class="fa fa-angle-double-right"></i> drilling rate</a>
 						<a href="index.php?page=gallery-drills" class="article-link"><i class="fa fa-angle-double-right"></i> gallery</a>
 					</div>

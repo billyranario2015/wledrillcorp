@@ -7,14 +7,7 @@
 
 	$servername = 'http://' . $_SERVER['SERVER_NAME'];
 
-	$template_dir = 'tpl';
-
-	if ( isset($_SESSION['dir']) ) {
-		$template_dir = $_SESSION['dir'];
-	}
-	// echo $template_dir;
-
-	$loader = new Twig_Loader_Filesystem( $template_dir );
+	$loader = new Twig_Loader_Filesystem( 'tpl' );
 	$twig = new Twig_Environment($loader);
 
 	$req = trim($_SERVER["REQUEST_URI"], '/');
@@ -51,8 +44,8 @@
 		$data['gallery'] = $files;
 	}
 
-	if ( $page == 'gallery' ) {
-		$dir = 'img/gallery';
+	if ( $page == 'gallery-drills' ) {
+		$dir = 'img/gallery-drills';
 		$files = array_diff(scandir($dir), array('..', '.'));
 		$data['gallery'] = $files;
 	}
@@ -67,19 +60,22 @@
 		$data['services'] = $files;
 	}
 
+
 	/* ------------------- Contact Form --------------------- */
 	$alert_msg = null;
 	if ( $action == 'send-inquiry' ) {
 		$alert_msg = submitInquiry();
 	}
+	/* ------------------------------------------------------ */
 
 	try {
 		echo $twig->render($page.'.html.twig', 
 			array(
-				'pagename' 	=> $page,
-				'data'		=> $data,
-				'alert_msg' => $alert_msg,
-				'basename'	=> $basename
+				'pagename' 		=> $page,
+				'data'			=> $data,
+				'alert_msg' 	=> $alert_msg,
+				'basename'		=> $basename,
+				'translations'	=> $lang  // Check sessions.php for value of $lang variable
 			)
 		);
 	} catch(Exception $e) {
