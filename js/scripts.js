@@ -1,7 +1,7 @@
 $( document ).ready( function() {
 	$('#banner-wrapper,#banner-wrapper2').layerSlider({
 	 	autostart: true,
-		skin: 'fullwidth',
+		skin: 'lightskin',
 		skinsPath: 'http://localhost/skins/',
 		responsiveUnder: 960,
 		layersContainer: 960
