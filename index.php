@@ -30,7 +30,7 @@
 	$basename = '';
 
 	if ( basename($_SERVER['REQUEST_URI']) )
-		$basename = trim_language_url( $servername . '/' . basename($_SERVER['REQUEST_URI']) . '&&' ) ;
+		$basename = trim_language_url( $servername . '/' . basename($_SERVER['REQUEST_URI']) ) ;
 	else 
 		$basename = trim_language_url( $servername . '/' . 'index.php?' ) ;
 

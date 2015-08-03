@@ -27,8 +27,8 @@ function trim_language_url( $data_url )
 	$a = $data_url;
 	$parts = parse_url($a);
 	$queryParams = array();
-	parse_str( isset($parts['query']) , $queryParams);
-	unset($queryParams['lang']);
+	parse_str( @$parts['query'] , $queryParams);
+	unset( $queryParams['lang'] );
 	$queryString = http_build_query($queryParams);
 	$url = $parts['path'] . '?' . $queryString;
 	return $url;
