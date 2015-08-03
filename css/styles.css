@@ -79,12 +79,13 @@ header {
 #main-menu {
 	margin-top: 12px;
 }
+
 #main-menu > li > a {
 	text-transform: uppercase;
 	color: #fff;
 	background: #6DBC49;
 	padding: 10px 15px;
-	border-radius: 6px 6px 0 0;
+	/*border-radius: 6px 6px 0 0;*/
 	margin-right: 2px;
 	font-size: 12px;
 	transition: all 0.8s ease-in-out;
@@ -298,6 +299,14 @@ footer {
     position: relative;
     top: -25px;
 }
+.font-under{
+    height: 20px;
+   	padding: 0 10px 0 10px;
+    background: #F8F8F8;
+    position: relative;
+    top: 12px;
+    font-size: 16px;
+}
 
 .img-responsive {
 	width: 100%;
@@ -374,7 +383,7 @@ footer {
 }
 
 .font-sm tr td{
-	font-size: 10px;
+	font-size: 9px;
 	font-weight: 600;
 	text-align: center;
 }
