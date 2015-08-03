@@ -43,7 +43,6 @@
 		$files = array_diff(scandir($dir), array('..', '.'));
 		$data['gallery'] = $files;
 	}
-
 	if ( $page == 'gallery-drills' ) {
 		$dir = 'img/gallery-drills';
 		$files = array_diff(scandir($dir), array('..', '.'));
